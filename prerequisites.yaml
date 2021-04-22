@@ -106,7 +106,7 @@ Resources:
      Type: AWS::Lambda::Function
      Properties:
        FunctionName: ListSecretData
-       Runtime: nodejs6.10
+       Runtime: nodejs12.x
        Role: !GetAtt RequestSecretDataExecutionRole.Arn
        Timeout: 5
        MemorySize: 128
